@@ -3,11 +3,19 @@ package org.example;
 import java.util.ArrayList;
 
 public class Patron {
- String name;
+ private String name;
  private static ArrayList<Book> borrowedBooks = new ArrayList<>();
  private static ArrayList<Book> books = new ArrayList<>();
 
  public Patron(String name) {
+  this.name = name;
+ }
+
+ public String getName() {
+  return name;
+ }
+
+ public void setName(String name) {
   this.name = name;
  }
 
